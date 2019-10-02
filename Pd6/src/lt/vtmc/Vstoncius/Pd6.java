@@ -9,6 +9,7 @@ package lt.vtmc.Vstoncius;
  */
 public class Pd6 {
 	static String name = "Bendras";
+
 	/**
 	 * @param args
 	 */
@@ -24,8 +25,6 @@ public class Pd6 {
 		localCommon();
 		orderOfAction();
 		mixedTypes();
-		
-		
 
 	}
 
@@ -33,7 +32,7 @@ public class Pd6 {
 		int integer = 5;
 		byte bytee = 2;
 		System.out.println("Sudedame int su byte (auto convesion): " + (integer + bytee));
-		
+
 	}
 
 	private static void orderOfAction() {
@@ -42,16 +41,17 @@ public class Pd6 {
 		int intThree = 3;
 		boolean bolOne = true;
 		boolean bolTwo = false;
-				
-		System.out.println("Veiksmu tvarka aritmetikoje: " + (intOne + intTwo * intThree - (intOne / intTwo + intThree)));
-		System.out.println("Veiksmu tvarka su loginiais argumentais: " + ((bolOne | bolTwo) & (bolTwo && bolOne)) );
+
+		System.out
+				.println("Veiksmu tvarka aritmetikoje: " + (intOne + intTwo * intThree - (intOne / intTwo + intThree)));
+		System.out.println("Veiksmu tvarka su loginiais argumentais: " + ((bolOne | bolTwo) & (bolTwo && bolOne)));
 	}
 
 	private static void localCommon() {
 		System.out.println("Bendra reiksme: " + name);
 		String name = "Private";
 		System.out.println("Vietine reiksme: " + name);
-		
+
 	}
 
 	public static void defineLong() {
@@ -59,8 +59,7 @@ public class Pd6 {
 		long longSampleValue2 = 9876544321L;
 		System.out.println("Sample long: " + longSampleValue);
 		System.out.println("Sudetis long: " + (longSampleValue + longSampleValue2));
-		
-		
+
 	}
 
 	public static void defineBoolean() {
@@ -74,8 +73,8 @@ public class Pd6 {
 		char charSampleValue = 'a';
 		char charSampleValue2 = 'A';
 		System.out.println("Char sample: " + charSampleValue);
-		System.out.println("Char addition: " + (char)(charSampleValue + charSampleValue2));
-		
+		System.out.println("Char addition: " + (char) (charSampleValue + charSampleValue2));
+
 	}
 
 	public static void defineDouble() {
@@ -83,7 +82,7 @@ public class Pd6 {
 		double doubleSampleValue2 = 7890987.2;
 		System.out.println("Double sample: " + doubleSampleValue);
 		System.out.println("Double sample addition: " + (doubleSampleValue + doubleSampleValue2));
-		
+
 	}
 
 	public static void defineFloat() {
@@ -91,15 +90,15 @@ public class Pd6 {
 		float floatSampleValue2 = 41.231f;
 		System.out.println("Smaple float: " + floatSampleValue);
 		System.out.println("Sample addition float: " + (floatSampleValue + floatSampleValue2));
-		
+
 	}
 
 	public static void defineShort() {
 		short shortSampleValue = 100;
 		short shortSampleValue2 = 12;
 		System.out.println("Sample short value: " + shortSampleValue);
-		System.out.println("Sample short addition: " +(shortSampleValue + shortSampleValue2));
-		
+		System.out.println("Sample short addition: " + (shortSampleValue + shortSampleValue2));
+
 	}
 
 	public static void defineInt() {
@@ -107,15 +106,15 @@ public class Pd6 {
 		int intSampleValue2 = 54321;
 		System.out.println("Samlple int value: " + intSampleValue);
 		System.out.println("Sample int addition: " + (intSampleValue + intSampleValue2));
-		
+
 	}
 
 	public static void defineByte() {
 		byte byteSampleValue = 123;
 		byte byteSampleValue2 = 20;
-		System.out.println("Sample byte value: " + (byte)byteSampleValue);
-		System.out.println("Sample byte addition (with overload): " + (byte)(byteSampleValue + byteSampleValue2));
-		
+		System.out.println("Sample byte value: " + (byte) byteSampleValue);
+		System.out.println("Sample byte addition (with overload): " + (byte) (byteSampleValue + byteSampleValue2));
+
 	}
 
 }
