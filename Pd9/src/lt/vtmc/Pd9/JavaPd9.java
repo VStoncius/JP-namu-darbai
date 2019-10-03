@@ -3,6 +3,7 @@
  */
 package lt.vtmc.Pd9;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -21,6 +22,68 @@ public class JavaPd9 {
 		miniGame();
 		x3For();
 		x3While();
+		sumAllFor();
+		sumAllWhile();
+		sumAllDoWhile();
+		lettersFor();
+		doubleFor();
+
+	}
+
+	private static void doubleFor() { //shows 100x100 table
+		int [] array = new int [100];
+		for (int x = 0; x < 100; x++) {
+			array [x] = x + 1;
+		}
+		for (int i = 0; i < 101; i++) {
+			for (int j = 0; j < 101; j++) {
+				int result = array[i] * j;
+				if (result == 0) {
+					System.out.print(i + " ");
+				} else {
+					System.out.print(result + " ");
+				}
+			}
+			System.out.println();
+		}
+
+	}
+
+	private static void lettersFor() { // 9. Prints all Uppercase letters A-Z
+		int letter = 65;
+		for (int i = 0; i < 26; i++) {
+			letter = letter + 1;
+			System.out.print((char)(letter -1) + " ");
+		} 
+		
+	}
+
+	private static void sumAllDoWhile() { // 8. Calculates the sum of all numbers from 1 to 100
+		int x = 0;
+		int number = 0;
+		do {
+			number = number + x;
+			x++;
+		} while (x != 101);
+		System.out.println("All numbers 1-100 adds to: " + number);
+	}
+
+	private static void sumAllWhile() { // 7. Calculates the sum of all numbers from 1 to 100
+		int x = 0;
+		int number = 0;
+		while (x != 101) {
+			number = number + x;
+			x++;
+		}
+		System.out.println("All numbers 1-100 adds to: " + number);
+	}
+
+	private static void sumAllFor() { // 6. Calculates the sum of all numbers from 1 to 100
+		int x = 0;
+		for (int i = 0; i < 101; i++) {
+			x = x + i;
+		}
+		System.out.println("All numbers 1-100 adds to: " + x);
 
 	}
 
@@ -44,7 +107,6 @@ public class JavaPd9 {
 										// right and prints how many guesses it took.
 		double random = Math.random();
 		int number = (int) (random * 100); // for testing delete a 0 from 100
-		System.out.println(number);
 		System.out.println("Try to guess a number between 1 and 100");
 		System.out.println("Enter your number");
 		int numberOfTries = 0;
